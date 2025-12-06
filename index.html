@@ -1,422 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Amal M K | Data Science Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amal M K - Portfolio</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-
-    <!-- Main CSS (from your template build) -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Google Fonts (optional, looks nicer) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Small custom tweaks on top of your existing CSS */
-
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            margin-top: 10px;
-            color: #e0e0e0;
-        }
-
-        .btn-primary-custom {
-            display: inline-block;
-            padding: 10px 22px;
-            border-radius: 30px;
-            border: 2px solid #fff;
-            text-decoration: none;
-            color: #fff;
-            margin-right: 10px;
-            margin-top: 10px;
-            font-weight: 500;
-        }
-
-        .btn-primary-custom:hover {
-            background: #fff;
-            color: #3498db;
-        }
-
-        .section-subtitle {
-            color: #74808a;
-            font-size: 0.95rem;
-            margin-bottom: 25px;
-        }
-
-        .pub-block,
-        .project,
-        .education-block {
-            background: #fff;
-            padding: 18px 20px;
-            margin-bottom: 18px;
-            border-radius: 6px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.08);
-        }
-
-        .pub-block h3,
-        .project h3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-
-        .pub-meta {
-            font-size: 0.9rem;
-            color: #74808a;
-            margin-bottom: 8px;
-        }
-
-        .label-pill {
-            display: inline-block;
-            padding: 3px 8px;
-            border-radius: 999px;
-            background: #3498db;
-            color: #fff;
-            font-size: 0.75rem;
-            margin-right: 5px;
-        }
-
-        .skills-list li {
-            font-size: 0.95rem;
-        }
-
-        .contact-links a {
-            margin-right: 12px;
-            display: inline-block;
-        }
-
-        .contact-links i {
-            margin-right: 6px;
-        }
-
-        /* Slightly tighter container on wide screens */
-        .container {
-            max-width: 1000px;
-        }
-
-        /* Fix for dark lead text contrast if your existing CSS is dark */
-        #lead-content h1,
-        #lead-content h2 {
-            text-shadow: 0 2px 4px rgba(0,0,0,0.55);
-        }
-    </style>
+  <!-- Main CSS and Font Awesome -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div id="logo">
-                <a href="#lead">AMAL M K</a>
-            </div>
+  <!-- Header / Navigation -->
+  <header class="sticky">
+    <ul id="menu">
+      <li><a href="#lead">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-            <nav>
-                <ul id="menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="Amal_MK.pdf" class="no-scroll" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
+  <!-- Lead / Hero Section -->
+  <div id="lead">
+    <!-- Dark overlay from your CSS -->
+    <div id="lead-overlay"></div>
 
-            <div id="mobile-menu-open"><i class="fa fa-bars"></i></div>
-        </div>
-    </header>
-
-    <div id="mobile-menu-close">
-        <span>Close</span> <i class="fa fa-times"></i>
+    <!-- Centered content (this matches your CSS expectations) -->
+    <div id="lead-content">
+      <h1>Amal M K</h1>
+      <h2>M.Tech in Data Science | Software Test Engineer (Trained Fresher)</h2>
+      <a href="Amal_MK.pdf" class="btn-rounded-white" download>Download Resume</a>
     </div>
 
-    <!-- Lead Section -->
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Amal M K</h1>
-            <h2>Data Scientist · M.Tech Data Science</h2>
-            <p class="tagline">
-                Machine Learning · Deep Learning · NLP · Computer Vision · Data Analytics
-            </p>
-            <a href="Amal_MK.pdf" class="btn-primary-custom" target="_blank">
-                <i class="fa fa-file-pdf-o"></i> Download Resume
-            </a>
-            <a href="#contact" class="btn-primary-custom">
-                <i class="fa fa-envelope"></i> Contact Me
-            </a>
-        </div>
+    <!-- Optional scroll-down icon (you can remove if you don’t want it) -->
+    <div id="lead-down">
+      <span>
+        <i class="fa fa-chevron-down"></i>
+      </span>
+    </div>
+  </div>
 
-        <div id="lead-overlay"></div>
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="heading">About Me</h2>
+    <p>
+      I am a passionate M.Tech Data Science graduate with a strong foundation in artificial intelligence,
+      deep learning, and natural language processing. Alongside my expertise in data-driven solutions,
+      I am also a trained Software Test Engineer skilled in analyzing requirements, preparing test scenarios,
+      executing test cases, and ensuring high-quality software delivery.
+      I am committed to solving real-world problems through innovative AI models and maintaining excellence
+      in software quality assurance.
+    </p>
+  </section>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down"></i>
-            </span>
-        </div>
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="education-block">
+      <h3>Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+      <span class="education-date">2023 – 2025</span>
+      <h4>M.Tech in Data Science</h4>
+      <p>CGPA: 6.88</p>
     </div>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <h2 class="heading">About</h2>
-            <p>
-                I am a Data Scientist with a strong focus on Machine Learning, Deep Learning, and Natural Language Processing.
-                I completed my <strong>M.Tech in Data Science</strong> at Amrita Vishwa Vidyapeetham, Coimbatore, where I worked on
-                bilingual image captioning and multimodal learning. My research includes an IEEE Transactions on Industrial
-                Informatics publication on Electric Vehicle energy consumption prediction and a bilingual image captioning
-                paper presented at CONIT 2025.
-            </p>
-            <p>
-                I enjoy building end-to-end data and ML pipelines — from data ingestion and preprocessing to model deployment
-                and evaluation. My tech stack includes Python, PyTorch, TensorFlow, Transformers, SQL, and Tableau, and I am
-                particularly interested in applied AI, NLP, and multimodal learning.
-            </p>
-        </div>
+    <div class="education-block">
+      <h3>Toch Institute of Science and Technology</h3>
+      <span class="education-date">2016 – 2020</span>
+      <h4>B.Tech in Computer Science</h4>
+      <p>CGPA: 6.32</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="heading">Projects</h2>
+
+    <!-- Testing Projects -->
+    <h2 class="heading" style="margin-top: 10px; font-size: 1.6em;">Testing Projects</h2>
+
+    <div class="project no-image">
+      <div class="project-info">
+        <h3>BANK IFSC CODE Application Testing</h3>
+        <p>This application is used for identifying bank details by entering the IFSC Code.</p>
+        <p>
+          • Analyzed UI document<br>
+          • Prepared Test Scenarios and Test Cases<br>
+          • Reviewed Test Cases<br>
+          • Prepared RTM (Requirements Traceability Matrix)<br>
+          • Executed Test Cases<br>
+          • Prepared Test Report<br>
+          • Prepared Bug Report
+        </p>
+      </div>
     </div>
 
-    <!-- Education Section -->
-    <div id="education" class="background-alt">
-        <div class="container">
-            <h2 class="heading">Education</h2>
-
-            <div class="education-block">
-                <h3>Amrita Vishwa Vidyapeetham, Coimbatore</h3>
-                <span class="education-date">2023 – 2025</span>
-                <h4>M.Tech in Data Science</h4>
-                <p>Current CGPA: <strong>7.35</strong></p>
-            </div>
-
-            <div class="education-block">
-                <h3>Touro University, USA</h3>
-                <span class="education-date">2025</span>
-                <h4>Accel Program – MS in Data Analytics</h4>
-                <p><strong>CGPA: 3.84</strong></p>
-                <p>
-                    Completed coursework: Introduction to Computers (A+), Statistics (B+), Analytics (A),
-                    Introduction to Programming (A+), Introduction to Database (A+).
-                </p>
-            </div>
-
-            <div class="education-block">
-                <h3>Toch Institute of Science and Technology</h3>
-                <span class="education-date">2016 – 2020</span>
-                <h4>B.Tech in Computer Science</h4>
-                <p>CGPA: <strong>6.32</strong></p>
-            </div>
-
-            <div class="education-block">
-                <h3>KPMHSS, Kerala</h3>
-                <span class="education-date">2014 – 2016</span>
-                <h4>12th Grade (Science)</h4>
-                <p>Percentage: <strong>83%</strong></p>
-            </div>
-
-            <div class="education-block">
-                <h3>Hail Mary EMRHSS, Kerala</h3>
-                <span class="education-date">2013 – 2014</span>
-                <h4>10th Grade</h4>
-                <p>Percentage: <strong>99%</strong></p>
-            </div>
-        </div>
+    <div class="project no-image">
+      <div class="project-info">
+        <h3>TMCART Ecommerce Web Application Testing</h3>
+        <p>This is a web application under the Ecommerce domain, with three modules: Admin, User, and Vendor.</p>
+        <p>
+          • Analyzed SRS document<br>
+          • Prepared Test Scenarios and Test Cases<br>
+          • Reviewed Test Cases<br>
+          • Prepared RTM (Requirements Traceability Matrix)<br>
+          • Executed Test Cases<br>
+          • Prepared Test Report<br>
+          • Prepared Bug Report
+        </p>
+      </div>
     </div>
 
-    <!-- Experience Section -->
-    <div id="experience">
-        <div class="container">
-            <h2 class="heading">Experience</h2>
-            <div id="experience-timeline">
+    <!-- M.Tech Projects -->
+    <h2 class="heading" style="margin-top: 30px; font-size: 1.6em;">M.Tech Projects</h2>
 
-                <div data-date="Apr 2022 – Mar 2023">
-                    <h3>Soften Technologies, India</h3>
-                    <h4>Junior Data Scientist</h4>
-                    <p>
-                        Built predictive Machine Learning and Deep Learning models using Python for business use-cases.
-                        Designed end-to-end data workflows including ingestion, preprocessing, feature engineering, model
-                        training, and evaluation. Developed Tableau-based dashboards and visual analytics for stakeholders,
-                        and applied NLP and statistical testing across multiple domains.
-                    </p>
-                </div>
-
-                <div data-date="Jul 2021 – Feb 2022">
-                    <h3>Hatchex Solutions Pvt Ltd</h3>
-                    <h4>Digital Marketing Executive</h4>
-                    <p>
-                        Executed SEO and Google Ads strategies to improve web traffic and conversions. Managed WordPress-based
-                        websites, monitored performance through Google Analytics and Data Studio, and ran A/B tests to optimize
-                        campaign performance.
-                    </p>
-                </div>
-
-            </div>
-        </div>
+    <div class="project no-image">
+      <div class="project-info">
+        <h3>Bilingual Image Captioning in English and Malayalam Using CNNs and Large Language Models</h3>
+        <p>
+          Developed a bilingual image captioning system that generates descriptive sentences in both English and
+          Malayalam using deep learning. Utilized a ResNet-18 encoder to extract image features and a Transformer
+          decoder for language generation. The dataset used was Malayalam Visual Genome 1.0, consisting of over
+          29,000 images annotated in both languages.
+        </p>
+        <p>
+          Applied greedy decoding for inference and trained the model using CrossEntropy loss with Adam optimizer.
+          Performance was evaluated using BLEU, METEOR, and ROUGE-L scores, demonstrating the model’s effectiveness
+          in capturing multilingual semantics and integrating computer vision with NLP in a multilingual setting.
+        </p>
+      </div>
     </div>
 
-    <!-- Publications Section -->
-    <div id="publications" class="background-alt">
-        <div class="container">
-            <h2 class="heading">Publications &amp; Research</h2>
-            <p class="section-subtitle">
-                Peer-reviewed research in EV energy modeling and bilingual image captioning.
-            </p>
-
-            <div class="pub-block">
-                <h3>Enhanced Electric Vehicle Energy Consumption Prediction Using TabTransformer, TabNet, and BERT Embeddings</h3>
-                <div class="pub-meta">
-                    <span class="label-pill">Journal</span>
-                    IEEE Transactions on Industrial Informatics, 2025, Vol. 21, pp. 7445–7454 &nbsp; | &nbsp; IF: 9.9, CiteScore: 22.5
-                </div>
-                <p>
-                    Developed deep learning models (TabTransformer, TabNet) and BERT-based feature embeddings to optimize
-                    EV energy consumption prediction. Achieved MAE of 0.38 with a 20% accuracy improvement using
-                    LightGBM and KMeans-based clustering, with hyperparameters tuned via Optuna.
-                </p>
-                <p>
-                    <strong>Tech stack:</strong> Python, TabNet, TabTransformer, LightGBM, BERT, Optuna, Scikit-learn
-                </p>
-                <a href="https://www.amrita.edu/publication/enhanced-electric-vehicle-energy-consumption-prediction-with-tabtransformer-tabnet-and-bidirectional-encoder-representations-from-transformers-embeddings/" target="_blank">
-                    View Publication
-                </a>
-            </div>
-
-            <div class="pub-block">
-                <h3>Bilingual Image Captioning in English and Malayalam Using CNNs and LLMs</h3>
-                <div class="pub-meta">
-                    <span class="label-pill">Conference</span>
-                    CONIT 2025 – KLE Institute of Technology, Paper ID: 2257
-                </div>
-                <p>
-                    Proposed a ResNet-18 + Transformer-based bilingual captioning model trained on the Malayalam Visual
-                    Genome dataset (29K+ samples). Integrated multilingual tokenization and greedy decoding and evaluated
-                    using BLEU, METEOR, and ROUGE-L metrics.
-                </p>
-                <p>
-                    <strong>Tech stack:</strong> PyTorch, ResNet-18, Transformers, Multilingual NLP, Evaluation Metrics
-                </p>
-                <a href="#" onclick="return false;">Conference paper link (to be added)</a>
-            </div>
-        </div>
+    <div class="project no-image">
+      <div class="project-info">
+        <h3>Predicting Electric Vehicle Energy Consumption using TabTransformer, TabNet, and BERT-Enhanced Models</h3>
+        <p>
+          Built advanced predictive models to forecast electric vehicle (EV) energy consumption using deep learning
+          and hybrid feature engineering techniques. Implemented TabTransformer and TabNet architectures for handling
+          structured tabular data, incorporating BERT embeddings for text features.
+        </p>
+        <p>
+          Performed Bayesian Optimization with Optuna to fine-tune model hyperparameters and reduced MAE to 0.38.
+          Achieved a 20% boost in prediction accuracy through LightGBM modeling and unsupervised clustering techniques.
+          This project focuses on scalable green-tech solutions for data-driven energy efficiency.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <!-- Projects Section -->
-    <div id="projects">
-        <div class="container">
-            <h2 class="heading">Projects</h2>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="heading">Skills</h2>
 
-            <div class="project">
-                <div class="project-info">
-                    <h3>EV Energy Consumption Modeling</h3>
-                    <p>
-                        Built advanced tabular deep learning models combining TabTransformer, TabNet, and BERT embeddings
-                        to predict energy consumption of Electric Vehicles. Used clustering (KMeans) and LightGBM to boost
-                        accuracy and interpretability, along with Bayesian optimization using Optuna.
-                    </p>
-                    <a href="https://github.com/amalmk47" target="_blank">View on GitHub</a>
-                </div>
-            </div>
+    <h3 style="font-size: 20px;">Data Science and Programming Skills</h3>
+    <ul>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Deep Learning</li>
+      <li>Natural Language Processing</li>
+      <li>AI</li>
+      <li>Feature Engineering</li>
+      <li>Model Training and Evaluation</li>
+      <li>Data Visualization</li>
+      <li>Data Analysis</li>
+      <li>Computer Vision</li>
+      <li>Large Language Models</li>
+      <li>Tableau</li>
+    </ul>
 
-            <div class="project">
-                <div class="project-info">
-                    <h3>Bilingual Image Captioning (English &amp; Malayalam)</h3>
-                    <p>
-                        Developed a bilingual image captioning pipeline using ResNet-18 for visual feature extraction and
-                        Transformer-based decoders for caption generation. Trained on the Malayalam Visual Genome dataset and
-                        evaluated using standard captioning metrics.
-                    </p>
-                    <a href="https://github.com/amalmk47" target="_blank">View on GitHub</a>
-                </div>
-            </div>
+    <h3 style="font-size: 20px; margin-top: 25px;">Testing Skills</h3>
+    <ul>
+      <li>SDLC and STLC</li>
+      <li>Levels of Testing</li>
+      <li>Functional, Integration, System, Regression Testing</li>
+      <li>Preparing Test Scenarios and Test Cases</li>
+      <li>Test Plan and Test Case Design</li>
+      <li>Test Case Execution</li>
+      <li>Bug Reporting</li>
+      <li>Bug Life Cycle</li>
+      <li>RTM (Requirements Traceability Matrix)</li>
+      <li>Agile Model</li>
+      <li>Java OOP Concepts (Basics)</li>
+    </ul>
 
-            <!-- You can add more projects below if you want -->
-        </div>
-    </div>
+    <h3 style="font-size: 20px; margin-top: 25px;">Tools Known</h3>
+    <ul>
+      <li>JMeter</li>
+      <li>SOAP UI</li>
+      <li>Selenium</li>
+      <li>Postman</li>
+    </ul>
+  </section>
 
-    <!-- Skills Section -->
-    <div id="skills" class="background-alt">
-        <div class="container">
-            <h2 class="heading">Skills</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>PyTorch</li>
-                <li>TensorFlow</li>
-                <li>Transformers</li>
-                <li>Scikit-learn</li>
-                <li>NumPy &amp; Pandas</li>
-                <li>Computer Vision</li>
-                <li>Natural Language Processing</li>
-                <li>SQL</li>
-                <li>Tableau</li>
-                <li>Matplotlib &amp; Seaborn</li>
-                <li>Optuna (Bayesian Optimization)</li>
-                <li>Machine Learning &amp; Deep Learning</li>
-                <li>Statistical Modeling</li>
-                <li>Git, Jupyter, VS Code, Colab</li>
-            </ul>
-        </div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="heading">Contact</h2>
+    <p>Email: <a href="mailto:amalmk47@gmail.com">amalmk47@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/amal-m-k-612034362/" target="_blank">AMAL M K – LinkedIn</a></p>
+  </section>
 
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <h2 class="heading">Contact</h2>
-            <p class="section-subtitle">
-                Open to opportunities in Data Science, Machine Learning, and Applied AI.
-            </p>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amal M K</p>
+  </footer>
 
-            <div class="contact-links">
-                <p>
-                    <a href="mailto:amalmk47@gmail.com">
-                        <i class="fa fa-envelope"></i> amalmk47@gmail.com
-                    </a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/amalmk47/" target="_blank">
-                        <i class="fa fa-linkedin-square"></i> LinkedIn
-                    </a>
-                </p>
-                <p>
-                    <a href="https://github.com/amalmk47" target="_blank">
-                        <i class="fa fa-github"></i> GitHub
-                    </a>
-                </p>
-                <p>
-                    <a href="Amal_MK.pdf" target="_blank">
-                        <i class="fa fa-file-pdf-o"></i> View Resume
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>
-                &copy; <span id="year"></span> Amal M K · Built with ❤️ using HTML, SCSS, and JS
-            </p>
-            <ul>
-                <li><a href="https://github.com/amalmk47" target="_blank"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/amalmk47/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="mailto:amalmk47@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <!-- JS -->
-    <script src="js/scripts.min.js"></script>
-    <script>
-        // Set footer year automatically
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <!-- Optional JS from the template (for mobile menu, smooth scroll, etc.) -->
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>
